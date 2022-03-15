@@ -1,5 +1,5 @@
 // entry point of my command line
-let helpFunc = require("./commands/help");
+let help = require("./commands/help");
 
 let inputArr = process.argv.slice(2);
 let command = inputArr[0];
@@ -11,7 +11,7 @@ switch (command) {
         console.log("organize function call");
         break;
     case "help" :
-        helpFunc.helpFunc();
+        help.helpFunc();
         break;
     default:
         console.log("command not recognized :/");
